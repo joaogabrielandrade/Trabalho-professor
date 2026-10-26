@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Pensamento Computacional para Todos</title>
+
+  <meta
+    name="description"
+    content="Aprenda sobre os 4 pilares do pensamento computacional: Decomposição, Reconhecimento de Padrões, Abstração e Elaboração de Algoritmos."
+  >
+
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+</head>
+
+<body>
+
+  <a href="#conteudo-principal" class="skip-link">
+    Ir para o conteúdo principal
+  </a>
+
+  <header class="site-header" aria-label="Cabeçalho principal">
+    <div class="header-container">
+
+      <div class="logo">
+        <a href="#inicio">
+          Pensamento Computacional
+        </a>
+      </div>
+
+      <nav
+        id="main-nav"
+        class="main-nav"
+        aria-label="Navegação principal"
+      >
+        <ul class="nav-links">
+          <li>
+            <a
+              href="#inicio"
+              aria-current="page"
+              class="active"
+            >
+              Início
+            </a>
+          </li>
+
+          <li>
+            <a href="#decomposicao">
+              Decomposição
+            </a>
+          </li>
+
+          <li>
+            <a href="#padroes">
+              Padrões
+            </a>
+          </li>
+
+          <li>
+            <a href="#abstracao">
+              Abstração
+            </a>
+          </li>
+
+          <li>
+            <a href="#algoritmos">
+              Algoritmos
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+
+        <div
+          class="accessibility-toolbar"
+          aria-label="Ferramentas de acessibilidade"
+        >
+          <button
+            id="btn-decrease-font"
+            type="button"
+            aria-label="Diminuir tamanho da fonte"
+          >
+            A-
+          </button>
+
+          <button
+            id="btn-increase-font"
+            type="button"
+            aria-label="Aumentar tamanho da fonte"
+          >
+            A+
+          </button>
+
+          <button
+            id="btn-toggle-theme"
+            type="button"
+            aria-label="Ativar modo escuro"
+            aria-pressed="false"
+          >
+            <span
+              class="icon-sun"
+              aria-hidden="true"
+              style="display: none;"
+            >
+              ☀️
+            </span>
+
+            <span
+              class="icon-moon"
+              aria-hidden="true"
+            >
+              🌙
+            </span>
+          </button>
+        </div>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="main-nav"
+          aria-label="Abrir menu de navegação"
+        >
+          <span aria-hidden="true">
+            ☰
+          </span>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <div
+    class="sr-only"
+    id="mensagens-acessibilidade"
+    role="status"
+    aria-live="polite"
+    aria-atomic="true"
+  >
+  </div>
+
+  <main
+    id="conteudo-principal"
+    tabindex="-1"
+  >
+
+    <section
+      id="inicio"
+      class="hero-section"
+      aria-labelledby="titulo-inicio"
+    >
+      <div
+        class="icon-large"
+        aria-hidden="true"
+      >
+        🧠
+      </div>
+
+      <h1 id="titulo-inicio">
+        Pensamento Computacional para Todos
+      </h1>
+
+      <p>
+        O pensamento computacional é uma habilidade fundamental que nos ajuda
+        a resolver problemas complexos de forma eficiente. Ele consiste em
+        formular problemas e suas soluções de maneira que tanto pessoas quanto
+        computadores possam compreendê-las.
+      </p>
+
+      <p>
+        Não é apenas para programadores! É uma competência essencial para
+        organizar sua rotina, planejar projetos escolares e encontrar soluções
+        inovadoras na sociedade. Descubra abaixo os
+        <strong>4 pilares principais</strong>
+        dessa abordagem.
+      </p>
+
+      <aside
+        class="accessibility-note"
+        aria-labelledby="titulo-acessibilidade"
+      >
+        <h2 id="titulo-acessibilidade">
+          Como usar este site
+        </h2>
+
+        <p>
+          Use a tecla Tab para navegar pelos controles e links.
+          O botão A+ aumenta o texto, o botão A- diminui o texto
+          e o botão de tema alterna entre claro e escuro.
+          As mudanças são informadas automaticamente ao leitor de tela.
+        </p>
+      </aside>
+    </section>
+
+    <section
+      id="decomposicao"
+      aria-labelledby="titulo-decomposicao"
+    >
+      <article
+        class="pillar-card"
+        aria-labelledby="titulo-decomposicao"
+      >
+        <div
+          class="pillar-icon"
+          aria-hidden="true"
+        >
+          🧩
+        </div>
+
+        <div class="pillar-content">
+
+          <h2 id="titulo-decomposicao">
+            Decomposição
+          </h2>
+
+          <p>
+            O primeiro pilar é a
+            <strong>Decomposição</strong>.
+            Significa pegar um problema grande ou complexo e dividi-lo em partes
+            menores, mais simples e mais fáceis de gerenciar ou resolver
+            individualmente.
+          </p>
+
+          <h3>
+            Exemplo no Dia a Dia
+          </h3>
+
+          <div class="example-box">
+            <p>
+              <strong>Fazer um bolo:</strong>
+              Em vez de tentar "fazer o bolo" de uma vez, você decompõe a tarefa
+              em: separar ingredientes, misturar a massa, untar a forma,
+              pré-aquecer o forno e assar.
+            </p>
+          </div>
+
+          <h3>
+            Exemplo na Computação
+          </h3>
+
+          <div class="example-box">
+            <p>
+              <strong>Desenvolvimento de Software:</strong>
+              Um grande programa de computador, como um jogo, é dividido em
+              pequenas funções e módulos independentes, como gráficos, som e
+              física, criados por equipes diferentes.
+            </p>
+          </div>
+
+        </div>
+      </article>
+    </section>
+
+    <section
+      id="padroes"
+      aria-labelledby="titulo-padroes"
+    >
+      <article
+        class="pillar-card"
+        aria-labelledby="titulo-padroes"
+      >
+        <div
+          class="pillar-icon"
+          aria-hidden="true"
+        >
+          🔍
+        </div>
+
+        <div class="pillar-content">
+
+          <h2 id="titulo-padroes">
+            Reconhecimento de Padrões
+          </h2>
+
+          <p>
+            O segundo pilar é o
+            <strong>Reconhecimento de Padrões</strong>.
+            É a habilidade de observar as semelhanças, características comuns
+            ou tendências dentro de um problema ou entre vários problemas
+            diferentes.
+          </p>
+
+          <h3>
+            Exemplo no Dia a Dia
+          </h3>
+
+          <div class="example-box">
+            <p>
+              <strong>Rotina Matinal:</strong>
+              Reconhecer que toda manhã você realiza as mesmas tarefas na mesma
+              ordem: acordar, escovar os dentes, trocar de roupa e tomar café.
+              Esse padrão cria um hábito automático que economiza tempo.
+            </p>
+          </div>
+
+          <h3>
+            Exemplo na Computação
+          </h3>
+
+          <div class="example-box">
+            <p>
+              <strong>Estruturas de Repetição:</strong>
+              Em programação, se um código precisa exibir 100 números na tela,
+              não escrevemos 100 linhas. Reconhecemos o padrão e usamos um loop,
+              ou laço de repetição, para automatizar a tarefa.
+            </p>
+          </div>
+
+        </div>
+      </article>
+    </section>
+
+    <section
+      id="abstracao"
+      aria-labelledby="titulo-abstracao"
+    >
+      <article
+        class="pillar-card"
+        aria-labelledby="titulo-abstracao"
+      >
+        <div
+          class="pillar-icon"
+          aria-hidden="true"
+        >
+          💡
+        </div>
+
+        <div class="pillar-content">
+
+          <h2 id="titulo-abstracao">
+            Abstração
+          </h2>
+
+          <p>
+            O terceiro pilar é a
+            <strong>Abstração</strong>.
+            Trata-se de focar apenas nas informações importantes e características
+            essenciais, ignorando os detalhes específicos ou irrelevantes.
+            Isso nos permite criar um modelo geral de como resolver o problema.
+          </p>
+
+          <h3>
+            Exemplo no Dia a Dia
+          </h3>
+
+          <div class="example-box">
+            <p>
+              <strong>Mapa de Metrô:</strong>
+              Um mapa de metrô não mostra as ruas exatas, a distância real em
+              quilômetros ou as curvas exatas dos túneis. Ele foca apenas no que
+              é essencial para o passageiro: as estações e as conexões entre as
+              linhas.
+            </p>
+          </div>
+
+          <h3>
+            Importância
+          </h3>
+
+          <div class="example-box">
+            <p>
+              A abstração é essencial na programação para criar funções e classes
+              reutilizáveis. Ao escrever uma função
+              <code>calcularMedia(notas)</code>,
+              quem a usa não precisa saber como ela funciona por dentro. Só
+              precisa saber o que ela faz.
+            </p>
+          </div>
+
+        </div>
+      </article>
+    </section>
+
+    <section
+      id="algoritmos"
+      aria-labelledby="titulo-algoritmos"
+    >
+      <article
+        class="pillar-card"
+        aria-labelledby="titulo-algoritmos"
+      >
+        <div
+          class="pillar-icon"
+          aria-hidden="true"
+        >
+          📋
+        </div>
+
+        <div class="pillar-content">
+
+          <h2 id="titulo-algoritmos">
+            Elaboração de Algoritmos
+          </h2>
+
+          <p>
+            O quarto pilar é a
+            <strong>Elaboração de Algoritmos</strong>.
+            É a criação de um conjunto de instruções passo a passo projetadas
+            para realizar uma tarefa ou resolver um problema. Se as instruções
+            forem claras o suficiente, qualquer pessoa ou computador poderá
+            segui-las e obter sempre o mesmo resultado.
+          </p>
+
+          <h3>
+            Exemplo em Linguagem Natural
+          </h3>
+
+          <div class="example-box">
+            <p>
+              <strong>Fazer um café expresso:</strong>
+              (1) Verificar se há água.
+              (2) Colocar a cápsula.
+              (3) Posicionar a xícara.
+              (4) Pressionar o botão.
+              (5) Aguardar a luz verde.
+              (6) Retirar a xícara.
+            </p>
+          </div>
+
+          <h3>
+            Exemplo em Pseudocódigo
+          </h3>
+
+          <pre
+            aria-label="Pseudocódigo para preparar um café expresso"
+          ><code>INÍCIO
+  Verificar se há água no reservatório da máquina
+  SE não houver água, ENTÃO
+    Encher o reservatório com água filtrada
+  FIM_SE
+
+  Colocar a cápsula de café no compartimento
+  Posicionar a xícara abaixo do bico
+  Pressionar o botão de preparo
+
+  AGUARDAR a luz verde acender (fim do processo)
+  Retirar a xícara
+FIM</code></pre>
+
+        </div>
+      </article>
+    </section>
+
+  </main>
+
+  <footer
+    class="site-footer"
+    aria-label="Rodapé do site"
+  >
+    <div class="footer-container">
+
+      <p>
+        &copy; 2024 Pensamento Computacional para Todos.
+        Todos os direitos reservados.
+      </p>
+
+      <p>
+        Projeto de caráter educacional sobre os pilares da computação.
+      </p>
+
+      <p class="integrantes">
+        Integrantes: Nome 1, Nome 2, Nome 3
+      </p>
+
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+
+</body>
+</html>
